@@ -1,0 +1,24 @@
+# application.properties.template
+
+#
+spring.application.name=${APP_NAME}
+server.port=${SERVER_PORT}
+
+# MariaDB
+spring.datasource.driver-class-name=org.mariadb.jdbc.Driver
+spring.datasource.url=${JDBC_DATABASE_URL}
+spring.datasource.username=${DB_USERNAME}
+spring.datasource.password=${DB_PASSWORD}
+spring.datasource.hikari.maximum-pool-size=20
+
+# JPA
+spring.jpa.hibernate.ddl-auto=update
+spring.jpa.properties.hibernate.format_sql=true
+spring.jpa.properties.hibernate.show_sql=true
+spring.jpa.properties.hibernate.jdbc.batch_size=100
+spring.jpa.properties.hibernate.fetch_size=100
+
+# Redis
+spring.redis.host=${REDIS_HOST}
+spring.redis.port=${REDIS_PORT}
+expire.defaultTime=${EXPIRE_DEFAULT_TIME:3}

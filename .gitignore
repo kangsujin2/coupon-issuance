@@ -1,0 +1,23 @@
+# Gradle
+.gradle/
+!gradle/wrapper/gradle-wrapper.jar    # keep the wrapper JAR
+
+# Build outputs
+**/build/
+out/
+
+# Log files
+*.log
+
+# OS-specific files
+.DS_Store
+Thumbs.db
+
+# Environment & sensitive files
+.env
+application.properties
+
+# IDE settings (keep only what you use)
+.idea/
+*.iml
+.vscode/
